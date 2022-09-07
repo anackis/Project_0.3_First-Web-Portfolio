@@ -1,0 +1,35 @@
+@mixin before_circle
+	&:before
+		content: ''
+		position: absolute
+		width: 36px
+		height: 36.21px
+		background: $main-color
+		border-radius: 100%
+		z-index: -1
+		top: -25%
+		left: 0
+	
+@mixin before_circleblack
+	&:before
+		content: ''
+		position: absolute
+		width: 15px
+		height: 15px
+		border: 1px solid #000000
+		border-radius: 100%
+		left: -35px
+		top: 25%
+		transition: 0.3s all
+@mixin hover_effect
+	svg
+		path
+			transition: 0.6s all
+	&:hover
+		cursor: pointer
+		svg
+			path
+				transition: 0.5s all
+				fill: white
+
+		
