@@ -1,0 +1,50 @@
+.resume
+    padding-top: 120px
+    cursor: default
+    &__wrapper
+        padding: 60px 65px 0 65px
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        column-gap: 135px
+    &__column
+        
+        &-title
+            position: relative
+            padding-left: 42px
+            &:before
+                content: ''
+                position: absolute
+                width: 15px
+                height: 15px
+                background: #38E0EB
+                border-radius: 100%
+                left: -7px
+                top: 25%
+        &-item
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                width: 1px
+                height: 100%
+                top: -15px
+                left: 0
+                background-color: #000
+        &-head
+            padding-left: 42px
+            display: flex
+            align-items: center
+        &-text
+            padding-left: 42px
+        &-top
+            margin-left: 19px
+        &-img
+            width: 36px
+            height: 36px
+            display: flex
+            justify-content: center
+            align-items: center
+        .beforecircle
+            padding-left: 0
+            &:before
+                top: 0
