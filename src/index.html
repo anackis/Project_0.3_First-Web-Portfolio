@@ -531,17 +531,27 @@
                 </div>
                     <form class="form">
                         <div class="form__wrapper">
-                            <div class="form-name">
-                                <input type="text" placeholder="Your name">
+                            <div class="form-name form__box">
+                                <input required name="name" id="name" type="text">
+                                <label for="name">Your Name</label>
                             </div>
-                            <div class="form-email">
-                                <input type="email" placeholder="Your number">
+                            <div class="form-email form__box">
+                                <input required name="email" id="email" type="email">
+                                <label for="email">Your Email</label>
                             </div>
-                            <div class="form-text">
-                                <input type="text" placeholder="Your email">
+                            <div class="form-text form__box">
+                                <textarea name="text" id="text"></textarea>
+                                <label for="text">Your massage</label>
                             </div>
                         </div>
-                        <button class="button">Send a message</button>
+                        <div class="form__policy">
+                            <button class="button">Send a message</button>
+                                <div class="form__policybox">
+                                    <input required type="checkbox">
+                                    <span>I agree with</span>
+                                    <a href="/policy.html" target="_blank" class="form__policylink">Privacy policy</a>
+                                </div>
+                        </div>
                     </form>
             </div>
         </div>
