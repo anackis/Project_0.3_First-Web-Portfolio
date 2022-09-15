@@ -24,22 +24,22 @@
 
     <!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
-    <link rel="manifest" href="icons/favicon//manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+	<link rel="manifest" href="icons/favicon//manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -83,11 +83,11 @@
                 </svg>
         </div>
         <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link beforecircleblack">About me</a></li>
-            <li class="menu__item"><a href="#" class="menu__link beforecircleblack">My experience</a></li>
-            <li class="menu__item"><a href="#" class="menu__link beforecircleblack">My skills</a></li>
-            <li class="menu__item"><a href="#" class="menu__link beforecircleblack">My works</a></li>
-            <li class="menu__item"><a href="#" class="menu__link beforecircleblack">Contacts</a></li>
+            <li class="menu__item"><a href="#aboutme" class="menu__link beforecircleblack">About me</a></li>
+            <li class="menu__item"><a href="#resume" class="menu__link beforecircleblack">My experience</a></li>
+            <li class="menu__item"><a href="#utilities" class="menu__link beforecircleblack">My skills</a></li>
+            <li class="menu__item"><a href="#portfolio" class="menu__link beforecircleblack">My works</a></li>
+            <li class="menu__item"><a href="#contacts" class="menu__link beforecircleblack">Contacts</a></li>
         </ul>
         <div class="menu__btmlinks">
             <a href="#" class="menu__btmlink hovereffect">
@@ -120,19 +120,21 @@
         <div class="title title_fz16 beforecircle">My name is Alex Anackis</div>
         <h1 class="title title_fz48 promo__title">I am a web developer <br> from Latvia / Riga</h1>
         <div class="promo__btns">
-            <a href="#" class="promo__link btn title_fz14">Portfolio</a>
-            <a href="#" class="promo__link promo__link_ml title_fz14">About me</a>
+            <a href="#portfolio" class="promo__link btn title_fz14">Portfolio</a>
+            <a href="#aboutme" class="promo__link promo__link_ml title_fz14">About me</a>
         </div>
     </div>
 </section>
 
 
 
-<section class="aboutme">
+<section id="aboutme" class="aboutme">
     <div class="container">
         <div class="aboutme__wrapper">
             <div class="aboutme__imgarea">
-                <img src="img/myimg.jpg" alt="aboutme-img" class="aboutme__img">
+                <img srcset="img/myimg_min.jpg 300w, img/myimg.jpg 400w"
+                sizes="(max-width: 576px) 280px, (min-width: 577px) 400px"
+                src="img/myimg.jpg" alt="aboutme-img" class="aboutme__img">
             </div>
             <div class="aboutme__textarea">
                 <div class="title title_fz16 beforecircle">About me</div>
@@ -208,7 +210,7 @@
 
 
 
-<section class="resume">
+<section id="resume" class="resume">
     <div class="container">
         <div class="title title_fz16 beforecircle beforecircle_mid tac">Experience</div>
             <h2 class="title title_fz36 tac">How can I be useful</h2>
@@ -304,7 +306,7 @@
 
 
 
-<section class="utilities">
+<section id="utilities" class="utilities">
     <div class="container">
         <div class="title title_fz16 beforecircle beforecircle_mid tac">Skills</div>
             <h2 class="title title_fz36 tac">What do I use?</h2>
@@ -467,7 +469,7 @@
 </section>
 
 
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <div class="conatiner">
         <div class="title title_fz16 beforecircle beforecircle_mid tac">Skills</div>
             <h2 class="title title_fz36 tac">What do I use?</h2>
@@ -497,7 +499,7 @@
 
 
 
-<section class="contacts">
+<section id="contacts" class="contacts">
     <div class="container">
         <div class="contacts__wrapper">
             <div class="contacts__left">
@@ -529,7 +531,7 @@
                 </div>
                 <div class="contacts__underlinks title_fz14">Or leave your details and I will write to you myself: 
                 </div>
-                    <form class="form">
+                    <form class="form" action="#">
                         <div class="form__wrapper">
                             <div class="form-name form__box">
                                 <input required name="name" id="name" type="text">
@@ -563,7 +565,7 @@
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
