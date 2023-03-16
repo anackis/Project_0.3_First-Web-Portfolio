@@ -1,4 +1,4 @@
-Web first web Portfolio.
+My first web Portfolio.
 HTML + SCSS + JS + GULP
 
 ![localhost_3000_ (2)](https://user-images.githubusercontent.com/61510461/225578489-cf828c34-23ea-4580-905e-f7b4e17f9e37.png)
